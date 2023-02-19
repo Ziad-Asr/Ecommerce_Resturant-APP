@@ -48,7 +48,9 @@ const Register = () => {
                   />
                 </div>
                 <button type="submit" className="addTOCart__btn">
-                  Sign Up
+                  <Link to='/home'>
+                    Sign Up
+                  </Link>
                 </button>
               </form>
               <p>Have an account, already? <br /></p>
