@@ -40,7 +40,9 @@ const Login = () => {
                   />
                 </div>
                 <button type="submit" className="addTOCart__btn">
-                  Login
+                  <Link to='/home'>
+                    Login
+                  </Link>
                 </button>
               </form>
               <p>Don't have an account? <br /></p>
