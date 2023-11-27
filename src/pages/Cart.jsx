@@ -69,6 +69,7 @@ const Tr = (props) => {
   const deleteItem = () => {
     dispatch(cartActions.deleteItem(id));
   };
+  
   return (
     <tr>
       <td className="text-center cart__img-box">

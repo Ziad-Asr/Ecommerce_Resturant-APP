@@ -15,6 +15,7 @@ const Carts = () => {
   const toggleCart = () => {
     dispatch(cartUiActions.toggle());
   };
+
   return (
     <div className="cart__container">
       <ListGroup className="cart">
