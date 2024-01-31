@@ -10,8 +10,6 @@ const Login = () => {
   const loginNameRef = useRef();
   const loginPasswordRef = useRef();
 
-  console.log("login");
-
   const submitHandler = (e) => {
     e.preventDefault();
   };
