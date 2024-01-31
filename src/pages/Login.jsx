@@ -6,10 +6,11 @@ import { Link } from "react-router-dom";
 import Helmet from "../components/Helmet/Helmet";
 import CommonSection from "../components/UI/common-section/CommonSection";
 
-
 const Login = () => {
   const loginNameRef = useRef();
   const loginPasswordRef = useRef();
+
+  console.log("login");
 
   const submitHandler = (e) => {
     e.preventDefault();
@@ -40,13 +41,22 @@ const Login = () => {
                   />
                 </div>
                 <button type="submit" className="addTOCart__btn">
-                  <Link to='/home'>
-                    Login
-                  </Link>
+                  <Link to="/home">Login</Link>
                 </button>
               </form>
-              <p>Don't have an account? <br /></p>
-              <Link to="/register" style={{backgroundColor: "red", color: "white", padding: '5px 10px', borderRadius: '10px', marginTop: '20px'}}>
+              <p>
+                Don't have an account? <br />
+              </p>
+              <Link
+                to="/register"
+                style={{
+                  backgroundColor: "red",
+                  color: "white",
+                  padding: "5px 10px",
+                  borderRadius: "10px",
+                  marginTop: "20px",
+                }}
+              >
                 Create an account
               </Link>
             </Col>
